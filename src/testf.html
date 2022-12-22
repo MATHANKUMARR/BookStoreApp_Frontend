@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body id="val">
+
+    <button onclick="getVal()">Get</button>
+
+
+    <script>
+
+        const display = (res) => {
+            let bodyVal = document.getElementById("val");
+            Object.keys(res).map(key => {
+                    let node = document.createElement('p');
+                    node.innerHTML=`<p>${res[key]}</p>`
+                    bodyVal.appendChild(node);
+            })
+        } 
+
+        
+        function getVal() {
+            fetch('https://jsonplaceholder.typicode.com/users')
+            .then(res => res.json())
+            .then(res => {
+                console.log(res);
+                display(res);
+                return null;
+            })
+        }
+
+    </script>
+</body>
+</html>

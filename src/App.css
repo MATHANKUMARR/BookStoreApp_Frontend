@@ -1,0 +1,41 @@
+.carousel {
+  width:100%;
+  height: 100%;
+}
+
+.carousel-item img {
+  width : 100%;
+  height: 30%;
+}
+
+.carousel-item {
+  height : 55%;
+}
+
+
+.bg-layout {
+  background-color: #f5f1e3;
+  background-image: url("https://i.pinimg.com/originals/8a/6e/37/8a6e37d68713edd8ee0a97c9b245d192.jpg");
+  /* background-image: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX41490514.jpg"); */
+  background-blend-mode: overlay;
+  background-repeat: repeat-y;
+}
+
+.bg-sec-layout {
+  background-color: #eabf9f;
+}
+
+.bg-dark-layout {
+  background-color: #b68973;
+}
+
+.bg-dark-xs-layout {
+  background-color: #3e383c;
+}
+
+.bg-product-layout {
+  background-color: rgb(200, 226, 248);
+  border-radius: 10px;
+}
+
+
