@@ -19,7 +19,7 @@
     "web-vitals": "^3.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start --legacy-peer-deps",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
